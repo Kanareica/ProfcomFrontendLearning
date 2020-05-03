@@ -28,6 +28,37 @@ list of attribute:
 3) style - стиль данного элемента страницы
 4) lang - язык страницы
 5) charset - установить используемую кодировку(например utf-8)
+6) accesskey -
+7) contenteditable -
+8) contextmenu -
+9) dir -
+10) draggable -
+11) dropzone -
+12) hidden -
+13) spellcheck -
+14) tabindex -
+15) title -
+16) translate -
+17) атрибуты для обработки событий:
+    a) onblur - потеря фокуса
+    b) onchange - изменение значения элемента формы
+    c) onclick - щелчок левой кнопкой мыши на элементе
+    d) ondblclick - двойной щелчок левой кнопкой мыши на элементе
+    e) onfocus - получение фокуса
+    f) onkeydown - клавиша нажата, но не отпущена
+    g) onkeypress - клавиша нажата и отпущена
+    h) onkeyup - клавиша отпущена
+    i) onload - документ загружен
+    j) onmousedown - нажата левая кнопка мыши
+    k) onmousemove - перемещение курсора мыши
+    l) onmouseout - курсор покидает элемент
+    m) onmouseover - курсор наводится на элемент
+    n) onmouseup - левая кнопка мыши отпущена
+    o) onreset - форма очищена
+    p) onselect - выделен текст в поле формы
+    q) onsubmit - форма отправлена
+    r) onunload - закрытие окна
+18) data-"name of attribute" - свои тэги по названию, можно использовать для подсказок при наведении на избражение
 
 Page with special symbols:
 http://htmlbook.ru/samhtml/tekst/spetssimvoly
