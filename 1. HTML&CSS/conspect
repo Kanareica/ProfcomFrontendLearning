@@ -59,7 +59,10 @@ list of attribute:
     q) onsubmit - форма отправлена
     r) onunload - закрытие окна
 18) data-"name of attribute" - свои тэги по названию, можно использовать для подсказок при наведении на избражение
-19) alt - альтернатива, если была ошибка в выводе другого контента
+19) alt - альтернатива, если была ошибка в выводе изображения
+20) colspan - слияние n ячеек в строке
+21) rowspan - слияние n ячеек в колонке
+22) span - в colgroup объединяет ячейки для стилей и т.п.
 
 Page with special symbols:
 http://htmlbook.ru/samhtml/tekst/spetssimvoly
