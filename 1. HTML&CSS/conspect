@@ -246,6 +246,61 @@ Cкругление углов:
 Если для контента не задан float, то он игнорирует элементы с заданным.
 2) clear - сбросить обтекание: слева, справа, с двух сторон
 
+Работа с графикой на сайте
+Добавлять изображение на фон можно с помощью абсолютного пути и относительного(предпочтительней)
+
+Как происходит работа с фоном
+Если изображение меньше страницы, то оно будет повторяться, пока не заполнит всю страницу
+Типы, которые поддерживаются jpg, gif, png, SVG
+background-repeat: <no-repeat, repeat-x, repeat-y, repeat> - управление повтором
+background-position: <>/<left border> <top border> - разбить страницу на 9 прямоугольников, и выбрать куда поместить изображение/два значение отступа от указанной границы
+background-attachment: fixed - закрепляет фон сверху страницы
+background-origin: <> - управление положением внутри элемента, например как работает с отступами
+background-size: <> <> - управление размерами изображения
+background: <url(...)> <position> <position> </> <size> <repeat> <attachment> <color>
+Можно указать несколько изображений, через запятую. Накладываются друг на друга
+
+Линейный градиент
+background-image: linear-gradient(<to ...>/<...deg>, <first color>, <second color>)
+Если задать доп. свойство transparent, то будет видно второй, третий и т.д. градиенты
+
+Радиальный градиент
+background-image: radial-gradient(<not necessary, circle>/<not necessary, circle at <> <>>, <center color>, <radial color>)
+
+Горизонтальное и вертикальное меню
+Можно подменять ту часть изображения, которую видим после обрезки
+span.button2{
+	position: relative;
+	background-position: left top;
+	width: 25px;
+	height: 34px;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	display: inline-block;
+}
+span.button2:hover{
+	background-position: left top -34px;
+	cursor: pointer;
+	background-origin: content-box;
+}
+
+Чтобы ссылка срабатывала от нажатия на фон, нужно добавить display: block
+
+Сделать меню горизонтальным:
+display: inline у элементов списка
+у самой ссылки - display: inline-block
+
+Анимации, переходы и анимация
+transform: rotate(...deg) - поворот элемента на указанное число градусов
+для разных браузеров можно добавлять разные префиксы
+transform: scale(...) - масштаб
+
+Большинство переходов обычных делаем при помощи псевдоклассов
+замедление, плавность через
+transition-property: <нужное свойство>, ...;
+transition-duration: <время на анимацию>, ...;
+transition-delay: <время задкржки>, ...;
+
 Page with special symbols:
 http://htmlbook.ru/samhtml/tekst/spetssimvoly
 
